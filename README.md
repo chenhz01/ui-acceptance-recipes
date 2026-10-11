@@ -9,6 +9,8 @@ claim it in prose. This repo is that checklist format plus a runner.
 "agent says done, UI is broken" loops; **Medium (60-79%)** that the three
 bundled recipes cover the right baseline without project-specific checks.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 UI-generating agents are judged by a demo they did not objectively verify.
