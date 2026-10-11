@@ -1,0 +1,10 @@
+{
+  "schema": "uiar/v1",
+  "name": "render-smoke",
+  "description": "UI renders at all: page/build artifact exists and responds. Replace stub commands with your real ones (curl the dev server, check dist/ exists).",
+  "settings": {"timeout_seconds": 30},
+  "checks": [
+    {"id": "smoke-self", "title": "Runner sanity: python available and exit-0 works", "command": ["python", "-c", "import sys; sys.exit(0)"]},
+    {"id": "artifact-exists", "title": "STUB: replace with a real check, e.g. test -d dist", "command": ["python", "-c", "import pathlib,sys; sys.exit(0 if pathlib.Path('.').exists() else 1)"]}
+  ]
+}

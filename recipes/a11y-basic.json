@@ -1,0 +1,10 @@
+{
+  "schema": "uiar/v1",
+  "name": "a11y-basic",
+  "description": "Accessibility baseline: every check is a stub showing where axe/lambdaFail commands plug in. Wire real tools (axe-cli, pa11y) via the command field.",
+  "settings": {"timeout_seconds": 60},
+  "checks": [
+    {"id": "a11y-tool-presence", "title": "STUB: verify your a11y tool is installed (axe-cli/pa11y)", "command": ["python", "-c", "import sys; sys.exit(0)"], "optional": true},
+    {"id": "a11y-scan", "title": "STUB: run the real scan, e.g. axe http://localhost:3000", "command": ["python", "-c", "import sys; sys.exit(0)"]}
+  ]
+}

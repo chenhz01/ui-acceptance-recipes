@@ -1,0 +1,11 @@
+{
+  "schema": "uiar/v1",
+  "name": "interaction-regression",
+  "description": "Interaction regression: stub checks standing in for click/type/navigate flows (playwright, puppeteer). Each check must be independently idempotent.",
+  "settings": {"timeout_seconds": 120},
+  "checks": [
+    {"id": "flow-login", "title": "STUB: login flow script exits 0", "command": ["python", "-c", "import sys; sys.exit(0)"]},
+    {"id": "flow-form-submit", "title": "STUB: form submit flow script exits 0", "command": ["python", "-c", "import sys; sys.exit(0)"]},
+    {"id": "flow-back-nav", "title": "STUB: optional back-navigation check", "command": ["python", "-c", "import sys; sys.exit(0)"], "optional": true}
+  ]
+}
